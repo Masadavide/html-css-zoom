@@ -6,6 +6,7 @@
 
 body{
     background-color: black;
+    height: 100vh;
 }
 
 a{
@@ -28,13 +29,16 @@ a{
 }
 
 #container{
-    margin: 50px 70px 20px;
+    height: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 30px 70px 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    align-content: space-around;
+    align-content: center;
 }
 
 .image{
@@ -48,4 +52,75 @@ a{
     left: 0;
     padding: 5px;
     background-color: rgba(128, 128, 128, 70%);
+}
+
+#menu{
+    color: white;
+    background-color: grey;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#center{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#menu .fas{
+    font-size: 20px;
+    padding: 10px;
+}
+
+#menu .fa-chevron-up{
+    font-size: 10px
+}
+
+#left{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.text-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding: 0 10px;
+}
+
+#center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.fa-share-square{
+    color: greenyellow;
+}
+
+.end{
+    height: 100%;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#right a{
+    color: red;
+    padding: 0 20px; 
 }
